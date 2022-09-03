@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #3f9cc1;
+    font-size: 1.5rem;
+    position: sticky;
+}
+
+a {
+    float: left;
+    color:white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.splash-screen {
+    width: 100%;
+    height: 75%;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-bottom: 2px solid #263760;
+    z-index: -1; 
+    background: url(https://developers.arcgis.com/documentation/static/display-a-map-b4974c7cfef498eb43e99ab60191cbaf.png);
+}
+
+/*--------------HOME TITLE & SUBTITLE--------*/
+.title_container {
+    margin: 20% 0 0 10%;
+    max-width: 50%;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.subtitle {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.subtitle-background {
+    background: rgba(255,255,255,.60);
+    width: 83%;
+}
+
+/*--------------HOME SEARCH CONTAINER--------*/
+.search-container {
+    color: white;
+    margin-top: 25px;
+    width: 100%;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 80%;
+}
+
+.input-container { /* this is the input class */
+    background: #242e5a;
+    padding: 20px 20px 20px 20px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+input {  /* these are the actual input boxes */
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: #263760;
+    margin-top: 20px;
+    color: white;
+}
+
+.date-box {
+    width: 50%;
+    margin-right: 15px;
+}
+  
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+ 
+.search-button {
+    padding: 10px 20px;
+    background-color: #3f9cc1;
+    border: 2px solid #242e5a;
+    border-radius: 50px;
+    color: white;
+    margin: 20px;
+    margin-top: 45px; /* ALTER THIS TO CENTER SEARCH BUTTON */
+    font-size: 1.05;
+    cursor: pointer;
+}
+
+/*--------------HOME RESULTS CONTAINER--------*/
+.results-container {
+    background-color: pink;
+    display: flex;
+    border-radius: 9px;
+    padding: 300px;
+    flex-direction: column;
+    margin: 80px auto; 
+    max-width: 90%;
+}
+
+
