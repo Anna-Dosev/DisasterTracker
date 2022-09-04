@@ -22,8 +22,8 @@ server.get('/prep', (req, res) => {
     res.render('pages', {template: 'prep'});
 });
 
-server.get('/donate', (req, res) => {
-    res.render('pages', {template: 'donate'});
+server.get('/help', (req, res) => {
+    res.render('pages', {template: 'help'});
 });
 
 server.listen(8080, () => {

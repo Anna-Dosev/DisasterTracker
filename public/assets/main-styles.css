@@ -105,7 +105,7 @@ input {  /* these are the actual input boxes */
 
 /*--------------HOME RESULTS CONTAINER--------*/
 .results-container {
-    background-color: pink;
+    background-color: #242e5a;
     display: flex;
     border-radius: 9px;
     padding: 300px;

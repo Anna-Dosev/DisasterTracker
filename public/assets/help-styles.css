@@ -1,0 +1,77 @@
+.box {
+    padding: 20px 0;
+    margin: 30px;
+}
+
+.help-flex {
+    display: flex;
+}
+
+.contact_container {
+    flex-grow: 1;
+    background-color: #242e5a;
+    border-radius: 9px;
+    padding: 25px;
+    color: white;
+    margin-right: 30px;
+}
+
+.contact-subtitle {
+    padding: 12px;
+    border-bottom: 1px solid grey;
+}
+
+.contact-form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;  /* this is rel, but child elem will be absolute */
+}
+
+.form-control label {
+    display: inline-block;
+}
+
+.form-control input {
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    min-width: 50%;
+    max-width: 75%;
+    padding: 8px;
+}
+
+.form-control small {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-submit {
+    border: 2px solid rgba(255,255,255,.60);
+    color: #242e5a;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    min-width: 25%;
+    max-width: 50%;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.mission_container {
+    flex-grow: 2;
+    background-color: #242e5a;
+    border-radius: 9px;
+    /* width: 600px;  */
+    min-width: 60%;
+    max-width: 100%;
+    padding: 25px;
+    color: white;
+    overflow-y: auto;
+}
