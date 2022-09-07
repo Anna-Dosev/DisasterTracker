@@ -11,7 +11,7 @@
     flex-grow: 1;
     background-color: #242e5a;
     border-radius: 9px;
-    padding: 25px;
+    padding: 15px;
     color: white;
     margin-right: 30px;
 }
@@ -53,15 +53,16 @@
 }
 
 .contact-submit {
-    border: 2px solid rgba(255,255,255,.60);
-    color: #242e5a;
+    background-color: #3f9cc1;
+    border: 2px solid #242e5a;
     display: block;
     font-size: 16px;
     padding: 10px;
     min-width: 25%;
     max-width: 50%;
-    border-radius: 9px;
+    border-radius: 50px;
     cursor: pointer;
+    color: white;
 }
 
 .mission_container {
@@ -71,7 +72,25 @@
     /* width: 600px;  */
     min-width: 60%;
     max-width: 100%;
-    padding: 25px;
     color: white;
     overflow-y: auto;
+    height: 540px;
+}
+
+.mission-container-header {
+    position: sticky;
+    top: 0;
+    background-color: #242e5a;
+    padding: 20px;
+}
+
+.mission-result-item {
+    background-color: darkgrey;
+    padding: 15px;
+    border-radius: 9px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    max-width: 75%;
+    margin: 10px;
+    color: black;
+    overflow: auto;
 }

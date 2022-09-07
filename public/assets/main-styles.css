@@ -108,10 +108,20 @@ input {  /* these are the actual input boxes */
     background-color: #242e5a;
     display: flex;
     border-radius: 9px;
-    padding: 300px;
-    flex-direction: column;
-    margin: 80px auto; 
+    padding: 15px;
+    flex-direction: column; 
+    margin: 30px auto; 
     max-width: 90%;
+    overflow-y: auto;
+    height: 500px;
 }
 
+.result-item {
+    background-color: darkgrey;
+    padding: 15px;
+    border-radius: 9px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    max-width: 75%;
+    margin: 10px;
+}
 
