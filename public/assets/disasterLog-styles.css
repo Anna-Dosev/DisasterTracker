@@ -50,6 +50,16 @@ a {
     width: 83%;
 }
 
+.keyword { 
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.keyword-background {
+  background: rgba(255,255,255,.60);
+  width: 100%;
+}
+
 /*--------------HOME SEARCH CONTAINER--------*/
 .search-container {
     color: white;
@@ -81,7 +91,7 @@ input {  /* these are the actual input boxes */
     color: white;
 }
 
-.date-box {
+.state-box {
     width: 50%;
     margin-right: 15px;
 }
@@ -123,5 +133,99 @@ input {  /* these are the actual input boxes */
     border: 2px solid rgba(255, 255, 255, .5);
     max-width: 75%;
     margin: 10px;
+}
+
+/*--------------AUTOCOMPLETE SEARCH DROPDOWNS--------*/
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  .search-input .autocomplete{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .search-input.active .autocomplete{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .autocomplete li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  .search-input.active .autocomplete li{
+    display: block;
+  }
+  .autocomplete li:hover{
+    background: #3f9cc1;
+  }
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+  }
+
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  .search-input .autocomplete{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .search-input.active .autocomplete{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .autocomplete li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  .search-input.active .autocomplete li{
+    display: block;
+  }
+  .autocomplete li:hover{
+    background: #3f9cc1;
+  }
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+  }
+
+.no-results {
+  background-color: darkgrey;
+  padding: 15px;
+  border-radius: 9px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  max-width: 75%;
+  margin: 10px;
 }
 

@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #3f9cc1;
+    font-size: 1.5rem;
+    position: sticky;
+}
+
+a {
+    float: left;
+    color:white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.splash-screen {
+    width: 100%;
+    height: 75%;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-bottom: 2px solid #263760;
+    z-index: -1; 
+    background: url(https://developers.arcgis.com/documentation/static/display-a-map-b4974c7cfef498eb43e99ab60191cbaf.png);
+}
+
+/*--------------HOME TITLE & SUBTITLE--------*/
+.title_container {
+    margin: 20% 0 0 10%;
+    max-width: 50%;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.subtitle {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.subtitle-background {
+    background: rgba(255,255,255,.60);
+    width: 83%;
+}
+
+.help-flex {
+  display: flex;
+}
+
+.login_container {
+  flex-grow: 1;
+  background-color: #242e5a;
+  padding: 15px;
+  color: white;
+}
+
+.login-subtitle {
+  padding: 12px;
+  border-bottom: 1px solid grey;
+}
+
+.login-form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;  /* this is rel, but child elem will be absolute */
+}
+
+.form-control label {
+  display: inline-block;
+}
+
+.form-control input {
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  min-width: 50%;
+  max-width: 75%;
+  padding: 8px;
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-submit {
+  background-color: #3f9cc1;
+  border: 2px solid #242e5a;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  min-width: 25%;
+  max-width: 50%;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+
