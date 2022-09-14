@@ -2,21 +2,21 @@ module.exports = {
   "development": {
     "username": "admin",
     "password": "admin",
-    "database": "user-account-dev",
+    "database": "disaster-dev",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "user_accounts-test",
+    "database": "disaster-test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "user-accounts-prod",
+    "database": "disaster-prod",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

@@ -15,22 +15,35 @@
       <div class="contact_container">
         <h2>Contact Form</h2>
         <p class="contact-subtitle">To receive updates on situations in your general area, please complete the form below.</p>
-        <form class="contact-form" id="contact-form">
+        <form 
+          class="contact-form" 
+          id="contact-form"
+          >
           <div class="form-control">
             <label>Full Name</label>
-            <input type="text" placeholder="John Doe" id="username">
+            <input 
+              type="text" 
+              placeholder="John Doe" 
+              id="username" 
+              name='fullName'/>
           </div>
           <div class="form-control">
             <label>Email</label>
-            <input type="email" placeholder="john.doe@email.com" id="email">
-            <small>Error message</small>
+            <input 
+              type="email" 
+              placeholder="john.doe@email.com" 
+              id="email" 
+              name='email'/>
           </div>
           <div class="form-control">
             <label>Zip Code</label>
-            <input type="number" placeholder="12345" id="zipcode">
-            <small>Error message</small>
+            <input 
+              type="number" 
+              placeholder="12345" 
+              id="zipcode" 
+              name='zipCode'/>
           </div>
-          <button class='contact-submit'>Submit</button>
+          <button type='submit' class='contact-submit'>Submit</button>
         </form>
       </div>
       <div class="mission_container">

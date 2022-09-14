@@ -1,5 +1,35 @@
 const missionButton = document.getElementById('mission-submit')
+const contactBtn = document.querySelector('.contact-submit')
 const missionResultContainer = document.querySelector('.result_container')
+const form = document.querySelector('.contact-form')
+
+async function doContactRequest (body) {
+    const result = await fetch('/contactUs', {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body
+    });
+  }
+
+  function handleContactRequest (e) {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const stringified = stringifyFormData(data);
+    doContactRequest(stringified);
+  }
+
+  form.addEventListener('submit', handleContactRequest)
+
+
+
+
+
+
+
+
+
 
 const getMission = async () => {
     const apiData = await fetch('https://www.fema.gov/api/open/v2/FemaRegions')
