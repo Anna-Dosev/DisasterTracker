@@ -106,11 +106,13 @@ server.get('/checkAuth/:id', (req, res) => {
       console.log(createUser)
        if (createUser) {
         res.json({
-          message: 'Thank you for signing up.'
+          message: 'Thank you for signing up.',
+          isAlert: true
         });
       } else {
         res.json({
-          message: 'There is a problem with your signup.'
+          message: 'There is a problem with your signup.',
+          isAlert: true
         });
       }
     }

@@ -1,7 +1,15 @@
 const missionButton = document.getElementById('mission-submit')
 const contactBtn = document.querySelector('.contact-submit')
 const missionResultContainer = document.querySelector('.result_container')
-const form = document.querySelector('.contact-form')
+const form2 = document.querySelector('.contact-form')
+
+
+function handleContactRequest (e) {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const stringified = stringifyFormData(data);
+    doContactRequest(stringified);
+  }
 
 async function doContactRequest (body) {
     const result = await fetch('/contactUs', {
@@ -11,24 +19,13 @@ async function doContactRequest (body) {
       },
       body
     });
+    const data = await result.json()
+    if(data.isAlert) {
+        alert(data.message)
+    }
   }
 
-  function handleContactRequest (e) {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const stringified = stringifyFormData(data);
-    doContactRequest(stringified);
-  }
-
-  form.addEventListener('submit', handleContactRequest)
-
-
-
-
-
-
-
-
+form2.addEventListener('submit', handleContactRequest)
 
 
 const getMission = async () => {
@@ -59,4 +56,4 @@ const getMission = async () => {
 missionButton.addEventListener('click', getMission)
 
 
-
+//window.location.pathname.indexOf('search') > -1
